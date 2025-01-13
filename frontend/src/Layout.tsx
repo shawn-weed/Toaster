@@ -24,6 +24,9 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                 <Navbar.Link href='/notes'>
                   Notes
                 </Navbar.Link>
+                <Navbar.Link href='/settings'>
+                  Settings
+                </Navbar.Link>
               </Navbar.Collapse>
             </Navbar>
           </header>
