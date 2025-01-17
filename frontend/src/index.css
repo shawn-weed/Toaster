@@ -1,14 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 a {
   font-weight: 500;
-  color: #646cff;
   text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
 }
 
 h1 {
@@ -19,37 +17,38 @@ h1 {
 input {
   color: #1a1a1a;
 }
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #abb7ff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
     background-color: #ffffff;
   }
+  
   a:hover {
     color: #747bff;
   }
   button {
     background-color: #f9f9f9;
   }
+  #bannerText, #homeText {
+    text-shadow: hsl(196, 100%, 40%) -2px 2px;
+    color: white;
+  }
+
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: #fffbeb;
+    background-color: #0d0d10;
+  }
+  
+  a:hover {
+    color: #f84848;
+  } */
+  button {
+    background-color: #f9f9f9;
+  }
+
 }
 
 #cardp, #cardt {
@@ -59,3 +58,32 @@ button:focus-visible {
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical; 
 }
+@keyframes arrow {
+  0% {
+    transform: translateY(-10px)
+  }
+  50% {
+    transform: translateY(10px)
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+#arrow{
+  rotate: 180deg;
+  animation-name: arrow;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+#arrow2 {
+  animation-name: arrow;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+#sidebar div{
+  border-radius: 0%;
+}
+

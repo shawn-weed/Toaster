@@ -7,4 +7,4 @@ class NoteViewSet(ModelViewSet):
     queryset = Note.objects.all()
     serializer_class = NoteSerializer
     filter_backends = [filters.SearchFilter]
-    search_fields = ['id']
+    search_fields = ['id', 'issue_title', 'device', 'tech', 'user', 'tech_notes']

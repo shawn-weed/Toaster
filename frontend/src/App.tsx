@@ -5,9 +5,9 @@ import Home from './Home'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import AssetMgmt from './apps/assetManagement/pages/AssetMgmt'
 import Layout from './Layout'
-import NotesHome from './apps/notes/pages/NotesHome'
+import NotesHome from './apps/notes/pages/Notes'
 import NotePage from './apps/notes/pages/NotePage'
-import SettingsHome from './apps/settings/pages/SettingsHome'
+import SettingsHome from './apps/settings/pages/Settings'
 
 function App() {
     

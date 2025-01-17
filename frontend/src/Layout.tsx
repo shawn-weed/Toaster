@@ -8,36 +8,36 @@ interface LayoutProps {
 const Layout: React.FC<LayoutProps> = ({ children }) => {
     return (
         <div className='relative min-h-screen flex flex-col'>
-          <header className="">
+          <header className="absolute top-0 left-0 w-full">
             <Navbar className="">
               <Navbar.Brand as={Link} to='/'>
-                <img src='/src/assets/react.svg' />
+                <img className='h-10' src='/src/assets/toaster.png' />
               </Navbar.Brand>
               <Navbar.Toggle className='' />
-              <Navbar.Collapse>
+              <Navbar.Collapse className="ml-64">
                 <Navbar.Link href='/'>
                   Home
                 </Navbar.Link>
                 {/* <Navbar.Link href='#'>
                   Asset Management
                 </Navbar.Link> */}
-                <Navbar.Link href='/notes'>
+                <Navbar.Link href='/notes?tab=recent'>
                   Notes
                 </Navbar.Link>
-                <Navbar.Link href='/settings'>
+                <Navbar.Link href='/settings?tab=home'>
                   Settings
                 </Navbar.Link>
               </Navbar.Collapse>
             </Navbar>
           </header>
-            <main>
-                {children}
-            </main>
-            <footer className="relative w-full mt-auto">
-                <Footer>
-                  <FooterCopyright href='#' by='' year={2024} />
-                </Footer>
-            </footer>
+          <main className="p-14">
+              {children}
+          </main>
+          <footer className="absolute bottom-0 w-full">
+              <Footer>
+                <FooterCopyright href='#' by='' year={2024} />
+              </Footer>
+          </footer>
         </div>
     )
 }

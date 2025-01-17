@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'assetmanagement',
     'it_notes',
+    'settings',
 ]
 
 MIDDLEWARE = [

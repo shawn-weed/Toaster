@@ -6,8 +6,13 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
     flowbite.content(),
   ],
+  darkMode: "media",
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        bangers: ['Bangers', 'serif'],
+      }
+    },
   },
   plugins: [
     flowbite.plugin(),
