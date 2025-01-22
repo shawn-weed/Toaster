@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import axios from "axios";
 import { Button, Modal, Table, Textarea, TextInput } from 'flowbite-react';
-import { CiTrash } from "react-icons/ci";
+import { FaRegTrashCan } from "react-icons/fa6"
 
 
 type Props = {}
@@ -198,7 +198,7 @@ export default function SetLinks({}: Props) {
                               onClick={() => {setIdToDelete(link.id); setShowModal(true)}}
                               className='bg-transparent enabled:hover:bg-transparent enabled:hover:transparent'
                             >  
-                              <CiTrash size='20' className='text-red-500 dark:text-red-700'/>
+                              <FaRegTrashCan size='20' className='text-red-500 dark:text-red-700'/>
                             </Button>
                           </Table.Cell>
                         </>
