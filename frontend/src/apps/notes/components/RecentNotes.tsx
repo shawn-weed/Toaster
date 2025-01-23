@@ -6,7 +6,6 @@ type Props = {}
 
 export default function RecentNotes({}: Props) {
   const [recentPosts, setRecentPosts] = useState<any[]>([])
-  const [error, setError] = useState<string | null>(null)
 
   const url = import.meta.env.VITE_API_URL + 'notes/'
 

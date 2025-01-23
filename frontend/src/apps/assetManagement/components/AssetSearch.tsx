@@ -1,4 +1,3 @@
-import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 
 interface IAsset {
@@ -25,6 +24,7 @@ const AssetSearch: React.FC = () => {
         setAssetList(jsonData)
       }catch(err: any) {
         setError(err.message)
+        return error
       }
   }
     getAssets()

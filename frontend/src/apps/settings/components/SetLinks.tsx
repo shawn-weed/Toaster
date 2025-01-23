@@ -235,7 +235,7 @@ export default function SetLinks({}: Props) {
                   Are you sure you want to remove this link?
                 </h3>
                 <div className="flex justify-center gap-4 mt-5">
-                  <Button color='failure' onClick={(event) => {handleDelete(event); setShowModal(false)}}>
+                  <Button color='failure' onClick={(event: any) => {handleDelete(event); setShowModal(false)}}>
                     Yes, I'm sure
                   </Button>
                   <Button color='gray' onClick={() => setShowModal(false)}>

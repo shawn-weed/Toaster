@@ -14,7 +14,6 @@ export default function SearchNote({}: Props) {
       const [searchResults, setSearchResults] = useState<any[]>([])
       const [areThereResults, setAreThereResults] = useState<boolean>(false)
       const [error, setError] = useState<string | null>(null)
-      const [dateError, setDateError] = useState<boolean>(false)
       const [noResults, setNoResults] = useState<boolean>(false)
       const timerId = useRef<any>(null)
 
@@ -60,8 +59,7 @@ export default function SearchNote({}: Props) {
             <TextInput placeholder="Search details..." name='issue_title' className='w-96' value={searchForm} onChange={(e) => setSearchForm(e.target.value)} required />
           </Tooltip>
             {/* <Datepicker id='calender' name='date_of_occurance' value={date} onChange={(i) => {if(i) {handleDateChange(i)}}} required /> */}
-            <h5 className={dateError ? 'text-red-500' : 'hidden'}>Date can not be after today!</h5>
-            <Button className='' disabled={dateError} type="submit">Search</Button>
+            <Button className='' type="submit">Search</Button>
         </form>
       </div>
       <div className={areThereResults ? 'hidden' : 'flex flex-col items-center'}>
