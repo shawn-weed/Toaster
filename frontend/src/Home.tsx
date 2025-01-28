@@ -32,7 +32,7 @@ function Home({}: Props) {
                   key={link.id}
                   className="h-48 w-96 m-2 items-center text-center">
                   <div className="gap-4">
-                    <a id='cardt' className="font-bold text-2xl" href={`http://${link.url}`}>{link.title}</a> 
+                    <a id='cardt' className="font-bold text-2xl" target='_blank' href={link.url.startsWith('http') ? link.url : `http://${link.url}`}>{link.title}</a> 
                   </div>
                   <p id='cardp' className="text-sm">{link.desc}</p>
                 </Card>
