@@ -81,7 +81,7 @@ export default function AddANote({}: Props) {
       <form className="flex flex-wrap justify-between max-w-md gap-4 m-4 pb-4" onSubmit={handleSubmit}>
         <TextInput placeholder="Title" name='issue_title' value={formData.issue_title} onChange={handleChange} required />
         <TextInput placeholder="Device" name='device' value={formData.device} onChange={handleChange} />
-        <Datepicker id='calender' name='date_of_occurance' value={date} onChange={(i) => {if(i) {handleDateChange(i)}}} required />
+        <Datepicker id='calender' className='' name='date_of_occurance' value={date} onChange={(i) => {if(i) {handleDateChange(i)}}} required />
         <TextInput placeholder="Tech" name='tech' value={formData.tech} onChange={handleChange}  />
         <TextInput placeholder="User" name='user' value={formData.user} onChange={handleChange}  />
         <TextInput placeholder="Associated Ticket #" name='ticket_number' value={formData.ticket_number} onChange={handleChange}  />

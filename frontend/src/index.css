@@ -38,20 +38,20 @@ input {
 
 @media (prefers-color-scheme: dark) {
   :root {
-    color: #fffbeb;
+    color: #fff5eb;
     background-color: #0d0d10;
   }
   
   a:hover {
     color: #f84848;
-  } */
+  } 
   button {
-    background-color: #f9f9f9;
+    background-color: #3a3a3a;
   }
 
 }
 
-#cardp, #cardt {
+#cardp, #cardt, #card {
   display: -webkit-box;
   overflow : hidden;
   text-overflow: ellipsis;
@@ -86,4 +86,6 @@ input {
 #sidebar div{
   border-radius: 0%;
 }
+
+
 

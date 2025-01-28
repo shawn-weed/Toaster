@@ -11,7 +11,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
           <header className="absolute top-0 left-0 w-full">
             <Navbar className="">
               <Navbar.Brand as={Link} to='/'>
-                <img className='h-10' src='/src/assets/toaster.png' />
+                <img className='h-10' src='/Toaster.png' />
               </Navbar.Brand>
               <Navbar.Toggle className='' />
               <Navbar.Collapse className="ml-64">
